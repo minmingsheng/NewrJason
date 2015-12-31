@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	 var Jason = function(year, skill, hobby, education){
+		this.year = year;
+		this.hobby =[];
+		this.hobby.push(hobby);
+		this.skill=["Visual Communication"];
+		this.skill.push(skill);
+		this.education = ["Shanghai university"];
+		this.education.push(education);
+
+	 }
+	 Jason.prototype = {
+	 	constructor:Jason,
+	 	name:"Jason Sheng",
+	 	ChineseName : "Sheng, Minming",
+	 	pesonality:"nice, esaygoing, introverted, ambition-drived",
+	 	nationality: "Chinese",
+		city: "Shanghai",
+	 	
+	}
+	 var jason = new Jason(2014, "deisgn thinking", "taking photo","NSCAD");
+	 // console.dir(jason);
+	 var jason = new Jason(2015, "code", "coding","Sheridan");
+	 // console.dir(jason);
+	 var jason = new Jason(2016, "money", "money","money");
+	 console.dir(jason);
+
+	</script>
+</body>
+</html>
